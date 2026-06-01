@@ -1,0 +1,1088 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Arthur — UX/UI Designer specializing in web, mobile, and brand identity design."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Arthur — UX/UI Designer</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
+    <!-- Preconnect to Google Fonts for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;600&family=Space+Grotesk:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome (local) -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+
+    <!-- Normalize -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="./css/arthur.css" />
+  </head>
+  <body>
+    <!-- ============================================================
+     HEADER
+     ============================================================ -->
+    <header class="site-header">
+      <!-- Logo -->
+      <a href="#" class="site-header__logo" aria-label="Arthur — Back to home">
+        <img
+          src="./assets/logo-white.webp"
+          alt="Arthur"
+          width="99"
+          height="100"
+        />
+      </a>
+
+      <!-- Primary Navigation -->
+      <nav class="site-header__nav" aria-label="Primary navigation">
+        <!-- Search -->
+        <form class="site-header__search" role="search">
+          <label for="site-search" class="sr-only">Search site</label>
+          <input
+            type="search"
+            id="site-search"
+            name="search"
+            placeholder="Search here..."
+            autocomplete="off"
+          />
+          <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+        </form>
+
+        <!-- Fullscreen Toggle -->
+        <div
+          class="site-header__control site-header__control--screen"
+          role="button"
+          tabindex="0"
+          aria-label="Toggle fullscreen"
+        >
+          <i class="fa-solid fa-compress" aria-hidden="true"></i>
+          <i class="fa-solid fa-expand" aria-hidden="true"></i>
+        </div>
+
+        <!-- Theme Toggle (mobile only) -->
+        <div
+          class="site-header__control site-header__control--theme"
+          role="button"
+          tabindex="0"
+          aria-label="Toggle color theme"
+        >
+          <i class="fa-regular fa-sun" aria-hidden="true"></i>
+          <i class="fa-solid fa-moon" aria-hidden="true"></i>
+        </div>
+
+        <!-- Sidebar (Archee panel) -->
+        <input
+          type="checkbox"
+          id="sidebar-toggle"
+          class="sr-only"
+          aria-hidden="true"
+        />
+        <label
+          for="sidebar-toggle"
+          class="site-header__control site-header__sidebar"
+          role="button"
+          tabindex="0"
+          aria-label="Open sidebar"
+          aria-expanded="false"
+          aria-controls="sidebar-panel"
+        >
+          <i class="fa-solid fa-list-ul" aria-hidden="true"></i>
+
+          <aside class="sidebar__panel" id="sidebar-panel" aria-hidden="true">
+            <!-- Sidebar Head -->
+            <div class="sidebar__head">
+              <label
+                for="sidebar-toggle"
+                class="sidebar__close"
+                aria-label="Close sidebar"
+              >
+                <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+              </label>
+
+              <h2 class="sidebar__brand">Archee</h2>
+              <p>
+                Creeping they're she'd. Air fruit fourth moving saw sixth after
+                dominion male him them fruitful.
+              </p>
+            </div>
+
+            <!-- Sidebar Instagram Gallery -->
+            <div class="sidebar__middle">
+              <h3 class="sidebar__section-title">Instagram</h3>
+              <div class="sidebar__gallery">
+                <div class="sidebar__gallery-item">
+                  <img
+                    src="./assets/instagram-01.webp"
+                    alt="Instagram post 1"
+                    loading="lazy"
+                  />
+                  <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                </div>
+                <div class="sidebar__gallery-item">
+                  <img
+                    src="./assets/instagram-02.webp"
+                    alt="Instagram post 2"
+                    loading="lazy"
+                  />
+                  <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                </div>
+                <div class="sidebar__gallery-item">
+                  <img
+                    src="./assets/instagram-03.webp"
+                    alt="Instagram post 3"
+                    loading="lazy"
+                  />
+                  <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                </div>
+                <div class="sidebar__gallery-item">
+                  <img
+                    src="./assets/instagram-04.webp"
+                    alt="Instagram post 4"
+                    loading="lazy"
+                  />
+                  <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                </div>
+                <div class="sidebar__gallery-item">
+                  <img
+                    src="./assets/instagram-05.webp"
+                    alt="Instagram post 5"
+                    loading="lazy"
+                  />
+                  <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                </div>
+                <div class="sidebar__gallery-item">
+                  <img
+                    src="./assets/instagram-06.webp"
+                    alt="Instagram post 6"
+                    loading="lazy"
+                  />
+                  <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sidebar Footer -->
+            <div class="sidebar__foot">
+              <h3 class="sidebar__section-title">Follow Us</h3>
+              <div class="sidebar__social">
+                <a href="#" aria-label="Facebook">
+                  <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                </a>
+                <a href="#" aria-label="Twitter">
+                  <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="#" aria-label="LinkedIn">
+                  <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                </a>
+              </div>
+              <p>© 2021. Designed by VLThemes.</p>
+            </div>
+          </aside>
+        </label>
+
+        <!-- Menu Overlay -->
+        <div
+          class="site-header__control site-header__menu"
+          role="button"
+          tabindex="0"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="menu-panel"
+        >
+          <input
+            type="checkbox"
+            id="menu-toggle"
+            class="sr-only"
+            aria-hidden="true"
+          />
+
+          <label
+            for="menu-toggle"
+            class="menu__toggle-trigger"
+            aria-label="Toggle navigation menu"
+          >
+            <i
+              class="fa-solid fa-bars-staggered site-header__menu-open"
+              aria-hidden="true"
+            ></i>
+            <i
+              class="fa-solid fa-xmark site-header__menu-close"
+              aria-hidden="true"
+            ></i>
+          </label>
+
+          <div class="menu__panel" id="menu-panel" aria-hidden="true">
+            <label
+              for="menu-toggle"
+              class="menu__close"
+              aria-label="Close navigation menu"
+              role="button"
+              tabindex="0"
+            >
+              <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+            </label>
+
+            <ul class="menu__links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Pages</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Shop</a></li>
+            </ul>
+
+            <div class="menu__social">
+              <a href="#" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+              </a>
+              <a href="#" aria-label="Twitter">
+                <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="#" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- ============================================================
+     HERO SECTION
+     ============================================================ -->
+    <main id="main-content">
+      <section class="hero" aria-labelledby="hero-title">
+        <!-- Theme Toggle Pill (fixed, left side) -->
+        <input
+          type="checkbox"
+          id="theme-checkbox"
+          class="sr-only"
+          aria-hidden="true"
+        />
+        <label
+          for="theme-checkbox"
+          class="theme-toggle"
+          role="button"
+          tabindex="0"
+          aria-label="Toggle color theme"
+        >
+          <span class="theme-toggle__knob" aria-hidden="true"></span>
+          <span class="theme-toggle__label">
+            light <i class="fa-regular fa-sun" aria-hidden="true"></i>
+          </span>
+          <span class="theme-toggle__label">
+            dark <i class="fa-solid fa-moon" aria-hidden="true"></i>
+          </span>
+        </label>
+
+        <div class="container">
+          <!-- Text Content -->
+          <div class="hero__content">
+            <h1 class="hero__title" id="hero-title">
+              Hi! <br />
+              I am Arthur <br />
+              UX/UI Designer
+            </h1>
+
+            <div class="hero__actions">
+              <div
+                class="btn-3d-mask"
+                style="--btn-label: &quot;Download CV&quot;"
+              >
+                <button class="btn-3d" aria-label="Download CV">
+                  <span class="btn-3d-wrapper">
+                    <span class="btn-3d-face btn-3d-front"></span>
+                    <span class="btn-3d-face btn-3d-bottom"></span>
+                  </span>
+                </button>
+              </div>
+              <div class="hero__watch">
+                <button class="hero__play" aria-label="Watch intro video">
+                  <i class="fa-solid fa-play" aria-hidden="true"></i>
+                </button>
+                <p>Watch Video</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photos -->
+          <div class="hero__images" aria-hidden="true">
+            <div class="hero__images-card">
+              <img
+                src="./assets/pic-1.webp"
+                alt=""
+                fetchpriority="high"
+                width="350"
+                height="450"
+              />
+            </div>
+            <div class="hero__images-card">
+              <img
+                src="./assets/pic-2.webp"
+                alt=""
+                fetchpriority="high"
+                width="350"
+                height="450"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ============================================================
+     ABOUT SECTION
+     ============================================================ -->
+      <section class="about" aria-labelledby="about-title">
+        <div class="container">
+          <!-- Left: Label + Heading -->
+          <div class="about__head">
+            <p>About Me</p>
+            <h2 id="about-title">Creative Designer With Modern Techniques</h2>
+          </div>
+
+          <!-- Right: Body text + call CTA -->
+          <div class="about__body">
+            <p>
+              Fifth had Grass called rule light. Can't under can't. Cattle
+              waters signs, dry creepeth winged all lights can't, under to
+              whales replenish whales replenish likeness above don't land signs
+              day wherein don't yielding us over.
+            </p>
+            <p>
+              To wherein open man fish saw. Forth beginning a subdue whales.
+              Male. Saying blessed whose, meat saw. Divided in lesser creeping
+              open bring of made to. For, under sixth.
+            </p>
+
+            <!-- Call CTA -->
+            <div class="about__call">
+              <button class="about__call-icon" aria-label="Call directly">
+                <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              </button>
+              <p class="about__call-label">
+                Call Me <br />
+                Directly
+              </p>
+              <p class="about__call-number">+44 987 065 908</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ============================================================
+     STATISTICS SECTION
+     ============================================================ -->
+      <section class="statistics" aria-labelledby="statistics-title">
+        <h2 class="sr-only" id="statistics-title">Statistics</h2>
+
+        <div class="container">
+          <div class="statistics__item">
+            <p class="statistics__number" aria-label="452 works completed">
+              452
+            </p>
+            <p class="statistics__label">Works Completed</p>
+          </div>
+
+          <div class="statistics__item">
+            <p class="statistics__number" aria-label="348 happy customers">
+              348
+            </p>
+            <p class="statistics__label">Happy Customers</p>
+          </div>
+
+          <div class="statistics__item">
+            <p class="statistics__number" aria-label="516 positive reviews">
+              516
+            </p>
+            <p class="statistics__label">Positive Reviews</p>
+          </div>
+
+          <div class="statistics__item">
+            <p class="statistics__number" aria-label="1,154 working hours">
+              1,154
+            </p>
+            <p class="statistics__label">Working Hours</p>
+          </div>
+        </div>
+      </section>
+      <!-- ============================================================
+     SERVICES SECTION
+     ============================================================ -->
+      <section class="services" aria-labelledby="services-title">
+        <div class="container">
+          <!-- Section Header -->
+          <div class="section-header services__header">
+            <div class="section-header__title">
+              <p>What I Do</p>
+              <h2 id="services-title">My Services</h2>
+            </div>
+            <div
+              class="btn-3d-mask"
+              style="--btn-label: &quot;More Services&quot;"
+            >
+              <button class="btn-3d" aria-label="More Services">
+                <span class="btn-3d-wrapper">
+                  <span class="btn-3d-face btn-3d-front"></span>
+                  <span class="btn-3d-face btn-3d-bottom"></span>
+                </span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Cards Grid -->
+          <div class="services__grid">
+            <!-- Card 1 -->
+            <article class="services__card">
+              <div class="services__card-body">
+                <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+                <h3 class="services__card-title">
+                  <a href="#">Web &amp; Mobile Design</a>
+                </h3>
+                <p>
+                  She'd let is moved them grass called given, seas, forth
+                  divided beast over herb to sea male created fifth green over.
+                </p>
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="services__card">
+              <div class="services__card-body">
+                <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+                <h3 class="services__card-title">
+                  <a href="#">Brand Strategy Accelerator</a>
+                </h3>
+                <p>
+                  She'd let is moved them grass called given, seas, forth
+                  divided beast over herb to sea male created fifth green over.
+                </p>
+              </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="services__card">
+              <div class="services__card-body">
+                <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+                <h3 class="services__card-title">
+                  <a href="#">Packaging &amp; Brand Identity</a>
+                </h3>
+                <p>
+                  She'd let is moved them grass called given, seas, forth
+                  divided beast over herb to sea male created fifth green over.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- ============================================================
+     SKILLS SECTION
+     ============================================================ -->
+      <section class="skills" aria-labelledby="skills-title">
+        <!-- Left: Skill bars -->
+        <div class="skills__content">
+          <div class="skills__inner">
+            <!-- Section Header -->
+            <div class="section-header">
+              <div class="section-header__title">
+                <h2 id="skills-title">Professional Skills</h2>
+                <p>
+                  His thing air image years one moveth his gathering without
+                  bring signs them he third over us.
+                </p>
+              </div>
+            </div>
+
+            <!-- Skill Items -->
+            <div class="skills__item">
+              <h3 class="skills__item-label">Web Design</h3>
+              <div
+                class="skills__bar"
+                data-progress="95%"
+                role="progressbar"
+                aria-valuenow="95"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-label="Web Design skill level: 95%"
+              >
+                <span class="skills__bar-fill" style="width: 95%"></span>
+              </div>
+            </div>
+
+            <div class="skills__item">
+              <h3 class="skills__item-label">Illustration</h3>
+              <div
+                class="skills__bar"
+                data-progress="70%"
+                role="progressbar"
+                aria-valuenow="70"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-label="Illustration skill level: 70%"
+              >
+                <span class="skills__bar-fill" style="width: 70%"></span>
+              </div>
+            </div>
+
+            <div class="skills__item">
+              <h3 class="skills__item-label">Photography</h3>
+              <div
+                class="skills__bar"
+                data-progress="85%"
+                role="progressbar"
+                aria-valuenow="85"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-label="Photography skill level: 85%"
+              >
+                <span class="skills__bar-fill" style="width: 85%"></span>
+              </div>
+            </div>
+
+            <div class="skills__item">
+              <h3 class="skills__item-label">Branding</h3>
+              <div
+                class="skills__bar"
+                data-progress="90%"
+                role="progressbar"
+                aria-valuenow="90"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-label="Branding skill level: 90%"
+              >
+                <span class="skills__bar-fill" style="width: 90%"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Decorative image -->
+        <div class="skills__image" aria-hidden="true">
+          <img src="./assets/portfolio-23.webp" alt="" loading="lazy" />
+        </div>
+      </section>
+      <!-- ============================================================
+     PORTFOLIO SECTION
+     ============================================================ -->
+
+      <section class="portfolio" aria-labelledby="portfolio-title">
+        <div class="container">
+          <!-- Section Header -->
+          <div class="section-header portfolio__header">
+            <div class="section-header__title">
+              <p>My Portfolio</p>
+              <h2 id="portfolio-title">Creative Works</h2>
+            </div>
+
+            <!-- Filter nav -->
+            <nav
+              class="portfolio__filter"
+              aria-label="Filter portfolio by category"
+            >
+              <ul>
+                <li>
+                  <a
+                    href="#"
+                    class="portfolio__filter-link--active"
+                    aria-current="true"
+                    >All</a
+                  >
+                </li>
+                <li><a href="#">Branding</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Inspiration</a></li>
+                <li><a href="#">Photography</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- Images Grid -->
+          <div class="portfolio__grid">
+            <div class="portfolio__item">
+              <img
+                src="./assets/portfolio-09.webp"
+                alt="Blue Peach — Photography project"
+                loading="lazy"
+              />
+              <div class="portfolio__caption">
+                <h3>Blue Peach</h3>
+                <p>Photography</p>
+              </div>
+            </div>
+
+            <div class="portfolio__item">
+              <img
+                src="./assets/portfolio-03.webp"
+                alt="Portfolio project — photography series"
+                loading="lazy"
+              />
+              <div class="portfolio__caption">
+                <h3>Blue Peach</h3>
+                <p>Photography</p>
+              </div>
+            </div>
+
+            <div class="portfolio__item">
+              <img
+                src="./assets/portfolio-04.webp"
+                alt="Portfolio project — photography series"
+                loading="lazy"
+              />
+              <div class="portfolio__caption">
+                <h3>Blue Peach</h3>
+                <p>Photography</p>
+              </div>
+            </div>
+
+            <div class="portfolio__item">
+              <img
+                src="./assets/portfolio-05.webp"
+                alt="Portfolio project — photography series"
+                loading="lazy"
+              />
+              <div class="portfolio__caption">
+                <h3>Blue Peach</h3>
+                <p>Photography</p>
+              </div>
+            </div>
+
+            <div class="portfolio__item">
+              <img
+                src="./assets/portfolio-06.webp"
+                alt="Polkadot Brochure — branding project"
+                loading="lazy"
+              />
+              <div class="portfolio__caption">
+                <h3>Polkadot Brochure</h3>
+                <p>Branding</p>
+              </div>
+            </div>
+
+            <div class="portfolio__item">
+              <img
+                src="./assets/portfolio-07.webp"
+                alt="Portfolio project — photography series"
+                loading="lazy"
+              />
+              <div class="portfolio__caption">
+                <h3>Blue Peach</h3>
+                <p>Photography</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Load more arrow -->
+          <div class="portfolio__more" aria-label="Load more works">
+            <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+          </div>
+        </div>
+      </section>
+      <!-- ============================================================
+     TESTIMONIALS SECTION
+     ============================================================ -->
+      <section class="testimonials" aria-labelledby="testimonials-title">
+        <div class="container">
+          <h2 class="sr-only" id="testimonials-title">Client Testimonials</h2>
+
+          <!-- Opening quote icon -->
+          <i
+            class="fa-solid fa-quote-left testimonials__icon"
+            aria-hidden="true"
+          ></i>
+
+          <!-- Slides track -->
+          <div
+            class="testimonials__track"
+            aria-live="polite"
+            aria-atomic="true"
+          >
+            <div class="testimonial__item">
+              <blockquote class="testimonial__quote">
+                Set creepeth seasons dominion moving their lesser over above the
+                i was good. Meat is without he beginning, our him male.
+              </blockquote>
+              <p class="testimonial__author">Andrew Connelly</p>
+              <p class="testimonial__company">Art &amp; Co.</p>
+            </div>
+
+            <div class="testimonial__item">
+              <blockquote class="testimonial__quote">
+                Set creepeth seasons dominion moving their lesser over above the
+                i was good. Meat is without he beginning, our him male.
+              </blockquote>
+              <p class="testimonial__author">Andrew Connelly</p>
+              <p class="testimonial__company">The Lights</p>
+            </div>
+
+            <div class="testimonial__item">
+              <blockquote class="testimonial__quote">
+                Set creepeth seasons dominion moving their lesser over above the
+                i was good. Meat is without he beginning, our him male.
+              </blockquote>
+              <p class="testimonial__author">Joseph Bridges</p>
+              <p class="testimonial__company">NY Times</p>
+            </div>
+            <div class="testimonial__item" aria-hidden="true">
+              <blockquote class="testimonial__quote">
+                Set creepeth seasons dominion moving their lesser over above the
+                i was good. Meat is without he beginning, our him male.
+              </blockquote>
+              <p class="testimonial__author">Andrew Connelly</p>
+              <p class="testimonial__company">Art &amp; Co.</p>
+            </div>
+          </div>
+
+          <!-- Counter + arrows -->
+          <div class="testimonials__controls">
+            <button
+              class="testimonials__arrow testimonials__arrow--prev"
+              aria-label="Previous testimonial"
+            >
+              <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+            </button>
+
+            <div class="testimonials__counter">
+              <!-- Animated number slot -->
+              <div class="testimonials__counter-slot">
+                <ul class="testimonials__counter-list" aria-hidden="true">
+                  <li>01</li>
+                  <li>02</li>
+                  <li>03</li>
+                  <li>01</li>
+                </ul>
+              </div>
+              <span aria-hidden="true">/</span>
+              <span>03</span>
+            </div>
+
+            <button
+              class="testimonials__arrow testimonials__arrow--next"
+              aria-label="Next testimonial"
+            >
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- ============================================================
+     PRICING SECTION
+     ============================================================ -->
+      <section class="pricing" aria-labelledby="pricing-title">
+        <div class="container">
+          <!-- Section Header -->
+          <div class="section-header pricing__header">
+            <div class="section-header__title">
+              <p>My Offer</p>
+              <h2 id="pricing-title">Pricing Plans</h2>
+            </div>
+            <div
+              class="btn-3d-mask"
+              style="--btn-label: &quot;Pricing Plans&quot;"
+            >
+              <button class="btn-3d" aria-label="Pricing Plans">
+                <span class="btn-3d-wrapper">
+                  <span class="btn-3d-face btn-3d-front"></span>
+                  <span class="btn-3d-face btn-3d-bottom"></span>
+                </span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Cards Grid -->
+          <div class="pricing__grid">
+            <!-- Card 1: Starter -->
+            <div class="pricing__card">
+              <div class="pricing__card-body">
+                <h3 class="pricing__card-title">Starter Plan</h3>
+                <p class="pricing__card-tagline">To void spirit seasons.</p>
+
+                <div class="pricing__price">
+                  <span class="pricing__currency">$</span>
+                  <p class="pricing__amount">19</p>
+                  <span class="pricing__period">/Mo</span>
+                </div>
+
+                <ul class="pricing__features">
+                  <li>Constant desire renewal</li>
+                  <li class="pricing__feature--unavailable">
+                    Two him darkness
+                  </li>
+                  <li class="pricing__feature--unavailable">
+                    Given be divided days
+                  </li>
+                </ul>
+
+                <div
+                  class="btn-3d-mask"
+                  style="--btn-label: &quot;Purchase Now&quot;"
+                >
+                  <button class="btn-3d" aria-label="Purchase Now">
+                    <span class="btn-3d-wrapper">
+                      <span class="btn-3d-face btn-3d-front"></span>
+                      <span class="btn-3d-face btn-3d-bottom"></span>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: Standard (featured) -->
+            <div class="pricing__card pricing__card--featured">
+              <div class="pricing__card-body">
+                <h3 class="pricing__card-title">Standard Plan</h3>
+                <p class="pricing__card-tagline">Herb which spirit days.</p>
+
+                <div class="pricing__price">
+                  <span class="pricing__currency">$</span>
+                  <p class="pricing__amount">39</p>
+                  <span class="pricing__period">/Mo</span>
+                </div>
+
+                <ul class="pricing__features">
+                  <li>Constant desire renewal</li>
+                  <li>Two him darkness</li>
+                  <li class="pricing__feature--unavailable">
+                    Given be divided days
+                  </li>
+                </ul>
+
+                <div
+                  class="btn-3d-mask"
+                  style="--btn-label: &quot;Purchase Now&quot;"
+                >
+                  <button class="btn-3d" aria-label="Purchase Now">
+                    <span class="btn-3d-wrapper">
+                      <span class="btn-3d-face btn-3d-front"></span>
+                      <span class="btn-3d-face btn-3d-bottom"></span>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3: Advanced -->
+            <div class="pricing__card">
+              <div class="pricing__card-body">
+                <h3 class="pricing__card-title">Advanced Plan</h3>
+                <p class="pricing__card-tagline">Fruit form grass heaven.</p>
+
+                <div class="pricing__price">
+                  <span class="pricing__currency">$</span>
+                  <p class="pricing__amount">59</p>
+                  <span class="pricing__period">/Mo</span>
+                </div>
+
+                <ul class="pricing__features">
+                  <li>Constant desire renewal</li>
+                  <li>Two him darkness</li>
+                  <li>Given be divided days</li>
+                </ul>
+
+                <div
+                  class="btn-3d-mask"
+                  style="--btn-label: &quot;Purchase Now&quot;"
+                >
+                  <button class="btn-3d" aria-label="Purchase Now">
+                    <span class="btn-3d-wrapper">
+                      <span class="btn-3d-face btn-3d-front"></span>
+                      <span class="btn-3d-face btn-3d-bottom"></span>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ============================================================
+     CONTACT CTA SECTION
+     ============================================================ -->
+      <section class="contact-cta" aria-labelledby="contact-title">
+        <div class="contact-cta__inner">
+          <h2 id="contact-title">Keep In Touch</h2>
+          <p>
+            Do not hesitate to contact us with any questions. We also have open
+            offices, so feel free to drop in for a chat.
+          </p>
+
+          <div class="btn-3d-mask" style="--btn-label: &quot;Let's Chat&quot;">
+            <button class="btn-3d" aria-label="Let's Chat">
+              <span class="btn-3d-wrapper">
+                <span class="btn-3d-face btn-3d-front"></span>
+                <span class="btn-3d-face btn-3d-bottom"></span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- ============================================================
+     INSTAGRAM FEED SECTION
+     ============================================================ -->
+      <section class="instagram" aria-label="Instagram Feed">
+        <div class="instagram__grid">
+          <a
+            href="#"
+            class="instagram__item"
+            aria-label="View Instagram post 1"
+          >
+            <img
+              src="./assets/instagram-01.webp"
+              alt="Instagram post 1"
+              loading="lazy"
+            />
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          </a>
+
+          <a
+            href="#"
+            class="instagram__item"
+            aria-label="View Instagram post 2"
+          >
+            <img
+              src="./assets/instagram-02.webp"
+              alt="Instagram post 2"
+              loading="lazy"
+            />
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          </a>
+
+          <a
+            href="#"
+            class="instagram__item"
+            aria-label="View Instagram post 3"
+          >
+            <img
+              src="./assets/instagram-03.webp"
+              alt="Instagram post 3"
+              loading="lazy"
+            />
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          </a>
+
+          <a
+            href="#"
+            class="instagram__item"
+            aria-label="View Instagram post 4"
+          >
+            <img
+              src="./assets/instagram-04.webp"
+              alt="Instagram post 4"
+              loading="lazy"
+            />
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          </a>
+
+          <a
+            href="#"
+            class="instagram__item"
+            aria-label="View Instagram post 5"
+          >
+            <img
+              src="./assets/instagram-05.webp"
+              alt="Instagram post 5"
+              loading="lazy"
+            />
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          </a>
+
+          <a
+            href="#"
+            class="instagram__item"
+            aria-label="View Instagram post 6"
+          >
+            <img
+              src="./assets/instagram-06.webp"
+              alt="Instagram post 6"
+              loading="lazy"
+            />
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          </a>
+
+          <a
+            href="#"
+            class="instagram__item"
+            aria-label="View Instagram post 7"
+          >
+            <img
+              src="./assets/instagram-04.webp"
+              alt="Instagram post 7"
+              loading="lazy"
+            />
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          </a>
+
+          <a
+            href="#"
+            class="instagram__item"
+            aria-label="View Instagram post 8"
+          >
+            <img
+              src="./assets/instagram-01.webp"
+              alt="Instagram post 8"
+              loading="lazy"
+            />
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          </a>
+        </div>
+      </section>
+      <!-- ============================================================
+     FOOTER
+     ============================================================ -->
+
+      <footer class="site-footer">
+        <div class="container">
+          <!-- Col 1: Brand + desc -->
+          <div class="site-footer__col">
+            <p class="site-footer__brand">Archee</p>
+            <p class="site-footer__desc">
+              Creeping they're she'd. Air fruit fourth moving saw sixth after
+              dominion male him them fruitful.
+            </p>
+          </div>
+
+          <!-- Col 2: Contact -->
+          <div class="site-footer__col">
+            <p class="site-footer__col-title">Contact</p>
+            <address class="site-footer__contact">
+              <a href="mailto:info@example.com">info@example.com</a>
+              <a href="tel:+44987065908">+44 987 065 908</a>
+            </address>
+          </div>
+
+          <!-- Col 3: Social + copyright -->
+          <div class="site-footer__col">
+            <p class="site-footer__col-title">Follow Us</p>
+            <div class="site-footer__social">
+              <a href="#" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+              </a>
+              <a href="#" aria-label="Twitter">
+                <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="#" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="#" aria-label="Instagram">
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="site-footer__bar">
+          <div class="container">
+            <p>© 2024 Arthur. Designed by VLThemes.</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
