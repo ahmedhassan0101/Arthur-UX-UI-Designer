@@ -2,7 +2,7 @@
 
 A production-ready personal portfolio template crafted with precision using **vanilla HTML5 and CSS3 only**. This project focuses on high-performance, accessibility, and maintainable architecture, delivering a seamless experience without the need for heavy frameworks or external dependencies.
 
-🔗 **Live Demo:** [Add your Vercel URL here]
+🔗 **Live Demo:** [https://arthur-ux-ui-designer.vercel.app/]
 
 ---
 
